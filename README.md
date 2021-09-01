@@ -1,5 +1,5 @@
 # TyroliumPremid
-Extension Premid, Afffiche Tyrolium dans premid
+Extension Premid, Affiche Tyrolium dans premid
 
 <img src="/.github/readme.png">
 
