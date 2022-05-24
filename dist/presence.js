@@ -11,6 +11,38 @@ presence.on("UpdateData", async () => {
         presenceData.details = "Home";
         presenceData.largeImageKey = "logo";
     }
+    else if (document.location.pathname == "/service.php") {
+        presenceData.details = "Service";
+        presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname == "/project.php") {
+        presenceData.details = "Project";
+        presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname == "/collaboration.php") {
+        presenceData.details = "Collaboration";
+        presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname == "/story.php") {
+        presenceData.details = "Story";
+        presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname == "/more.php") {
+        presenceData.details = "More information";
+        presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname == "/contact.php") {
+        presenceData.details = "Contact us";
+        presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname.includes("/Status/")) {
+        presenceData.details = "Server status";
+        presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname.includes("/Panel/")) {
+        presenceData.details = "Panel Admin";
+        presenceData.largeImageKey = "logo";
+    }
     else if (document.location.pathname.includes("/ServerMC/")) {
         presenceData.details = "Home - TyroServ";
         presenceData.largeImageKey = "server";
@@ -54,6 +86,12 @@ presence.on("UpdateData", async () => {
     else if (document.location.pathname.includes("/s-update-mc/")) {
         presenceData.details = "AdminPanel - TyroServ";
         presenceData.largeImageKey = "logo";
+    }
+    else if (document.location.pathname.includes("https://tyroserv.fr")) {
+        presenceData.details = "Home - TyroServ";
+        presenceData.largeImageKey = "server";
+        presenceData.smallImageKey = "logo";
+        presenceData.smallImageText = "Tyrolium";
     }
     if (presenceData.details == null) {
         presence.setTrayTitle();
